@@ -21,6 +21,11 @@
 .logo {
 }
 
+.search,
+.search-result {
+    width: 360px;
+}
+
 .search {
     width: 360px;
     height: var(--search-heigh);
@@ -56,6 +61,13 @@
     &:focus-within {
         border-color: rgba(22, 24, 35, 0.2);
     }
+}
+
+.search-title {
+    color: rgba(22, 24, 35, 0.5);
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 5px 12px;
 }
 
 .clear,
