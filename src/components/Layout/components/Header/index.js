@@ -9,6 +9,7 @@ import { Wrapper as PopperWrapper } from '~/components/Popper';
 import images from '~/assets/images';
 import styles from './Header.module.scss';
 import AccountItem from '~/components/AccountItem';
+import Button from '~/components/Button';
 
 const cx = classNames.bind(styles);
 
@@ -53,9 +54,12 @@ function Header() {
                         <button className={cx('Search-btn')}>
                             <FontAwesomeIcon icon={faMagnifyingGlass} />
                         </button>
-                        <div className={cx('action')}></div>
                     </div>
                 </Tippy>
+                <div className={cx('action')}>
+                    <Button text>Upload</Button>
+                    <Button primary>Log in</Button>
+                </div>
             </div>
         </header>
     );
